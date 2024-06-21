@@ -4,7 +4,7 @@ Welcome to the repository for the Smile Smash Burger project. This project is a 
 
 ## Live Demo
 
-You can view the live demo of the project at [https://carlotamdez96.github.io/SmileSmashBurger/](https://carlotamdez96.github.io/SmileSmashBurger/)
+You can view the live demo of the project at [https://carlotamenendez96.github.io/SmileSmashBurger-main/](https://carlotamenendez96.github.io/SmileSmashBurger-main/)
 
 ## Features
 
