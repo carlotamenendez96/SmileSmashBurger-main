@@ -279,7 +279,11 @@ section {
   margin: 0;
   font-family: var(--font-secondary);
 }
+.interseccion{
+  font-family: var(--font-secondary);
+  letter-spacing: 10px;
 
+}
 .header .logo h1 span {
   color: var(--color-primary);
 }
@@ -613,6 +617,12 @@ section {
 .about .content ul li {
   padding: 0 0 8px 26px;
   position: relative;
+}
+
+.history-list strong {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-primary);
 }
 
 .about .content ul i {
@@ -1531,6 +1541,10 @@ section {
 }
 
 .hero h2 span {
+  color: var(--color-primary);
+}
+
+.hero p span {
   color: var(--color-primary);
 }
 
