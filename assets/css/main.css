@@ -569,6 +569,9 @@ section {
 --------------------------------------------------------------*/
 .about .about-img {
   min-height: 500px;
+  background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
 
 .about h3 {
@@ -786,7 +789,7 @@ section {
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondos/mex-stats-bg.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/burgers/varias7.jpeg") center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -920,6 +923,11 @@ section {
   font-weight: 700;
   color: var(--color-primary);
 }
+.menu .tab-content .menu-item .price-burger {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -1047,6 +1055,24 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   position: relative;
+}
+
+.price_container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.price_container .type-burger{
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+}
+.type-burger-span{
+  font-size: 14px;
+  font-weight: 200;
+  font-style: oblique;
+  color: rgb(161, 161, 161);
 }
 
 .events .event-item .description {
