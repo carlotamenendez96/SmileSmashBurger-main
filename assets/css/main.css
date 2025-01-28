@@ -799,7 +799,7 @@ section {
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondos/var.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/professionals/gen/G-fondo.webp") center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -1525,13 +1525,67 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
-  background-size: cover;
+  width: 100vw;
+  height: calc(100vh - 90px);
+  margin: 90px 0 0 0;
+  padding: 0;
   position: relative;
-  min-height: 60vh;
-  padding: 160px 0 60px 0;
+  background: #000;
+  overflow: hidden;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
+.hero .container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100%;
+}
+
+.hero .row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Contenedor de la imagen */
+.hero .col-lg-5.order-1.order-lg-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* La imagen en sí */
+.hero .col-lg-5.order-1.order-lg-2 img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Contenedor del texto */
+.hero .col-lg-5.order-2.order-lg-1 {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  max-width: 500px;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+/* Mantener estilos de texto existentes */
 .hero h1 {
   font-size: 64px;
   font-weight: 700;
@@ -1544,69 +1598,57 @@ section {
   color: var(--color-primary);
 }
 
-.hero p span {
-  color: var(--color-primary);
-}
-
 .hero p {
   color: white;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
-.hero .btn-book-a-table {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 36px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: #fff;
-  background: var(--color-primary);
-  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
-}
+/* Media queries */
+@media (max-width: 768px) {
+  .hero .col-lg-5.order-2.order-lg-1 {
+    position: absolute;
+    left: 0;
+    top: 2%; /* Movemos el texto mucho más arriba */
+    transform: none;
+    width: 100%;
+    padding: 1.5rem;
+    background: none;
+    text-align: center;
+  }
 
-.hero .btn-book-a-table:hover {
-  background: rgba(206, 18, 18, 0.8);
-  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
-}
-
-.hero .btn-watch-video {
-  font-size: 16px;
-  transition: 0.5s;
-  margin-left: 25px;
-  color: var(--font-secondary);
-  font-weight: 600;
-}
-
-.hero .btn-watch-video i {
-  color: var(--color-primary);
-  font-size: 32px;
-  transition: 0.3s;
-  line-height: 0;
-  margin-right: 8px;
-}
-
-.hero .btn-watch-video:hover {
-  color: var(--color-primary);
-}
-
-.hero .btn-watch-video:hover i {
-  color: var(--color-primary);
-}
-
-@media (max-width: 640px) {
   .hero h1 {
-    font-size: 36px;
+    font-size: 32px; /* Reducimos un poco el tamaño para mejor ajuste */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
   }
 
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
+  .hero p {
     font-size: 14px;
+    max-width: 85%;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    line-height: 1.4;
   }
 }
 
+/* Para pantallas más pequeñas */
+@media (max-width: 576px) {
+  .hero .col-lg-5.order-2.order-lg-1 {
+    top: 2%; /* Aún más arriba en pantallas muy pequeñas */
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 13px;
+    max-width: 90%;
+  }
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
