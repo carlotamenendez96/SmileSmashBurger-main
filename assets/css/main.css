@@ -34,7 +34,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: var(--font-default);
   color: var(--color-default);
   background-color: black;
@@ -108,7 +108,7 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 97vw;
   height: 100vh;
   z-index: 9999;
   background: rgba(0,0,0,0.9);
@@ -352,11 +352,11 @@ section {
   border-bottom: 1px solid #fff;
 }
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   .header {
     height: 70px;
   }
-}
+} */
 
 .header.sticked {
   border-color: #fff;
@@ -632,7 +632,7 @@ section {
     line-height: 0;
     transition: 0.5s;
     z-index: 9999;
-    margin: 0 10px 0 20px;
+    /* margin: 0 10px 0 20px; */
   }
 
   .mobile-nav-hide {
